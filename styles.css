@@ -56,6 +56,16 @@ main {
   -ms-user-select: none;
   user-select: none;
 }
+.password .text input.font-sm{
+  font-size: 2rem;
+}
+.password .text input.font-xs{
+  font-size: 1.5rem;
+}
+.password .text input.font-xxs{
+  font-size: 1rem;
+}
+
 .password .actions button {
     background-color: transparent;
     border: none;
@@ -77,7 +87,7 @@ main {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 
 .security-indicator .bar.completed{
@@ -217,4 +227,30 @@ transition: all 0.2s;
 
 .submit button:hover{
   background-color: #9b51e0;
+}
+
+@media only screen and (max-width: 480px) {
+  .password {
+    padding: 1rem;
+  }
+
+  .password .text input {
+    font-size: 1.5rem;
+  }
+
+  .password .text input.font-sm {
+    font-size: 1.2rem;
+  }
+
+  .password .text input.font-xs {
+    font-size: 1rem;
+  }
+
+  .password .text input.font-xxs {
+    font-size: 1rem;
+  }
+
+  .password .actions img {
+    width: 24px;
+  }
 }
